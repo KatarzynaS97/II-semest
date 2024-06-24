@@ -1,0 +1,6 @@
+INSERT INTO zgloszenia VALUES(NULL,'1', '4' , 'Warszawa Staszica34/5' ,'1' , '10:24:00');
+SELECT adres, dyspozytorzy_id FROM zgloszenia where ratownicy_id=3;
+
+CREATE USER anna@localhost identified BY 'Anna4!';
+
+grant insert ,update , select on ratownictwo.zgloszenia to anna@localhost;

@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    background: #EEEEEE;
+}
+.kontener {
+    width: 1000px;
+    margin: auto;
+    text-align: center;
+}
+.logo,
+.menu,
+.stopka {
+    background: #c0c0c0;
+    height: 100px;
+    padding: 10px 0;
+}
+.logo {
+    width: 400px;
+    float: left;
+}
+.menu {
+    float: left;
+    width: 600px;
+}
+.banner {
+    background: #dddddd;
+    height: 200px;
+    float: left;
+    width: 100%;
+}
+.glowny {
+    float: left;
+    margin: 50px;
+    width: 900px;
+}
+.stopka {
+    float: left;
+    width: 100%;
+    text-align: right;
+}
+.menu a:link,
+.menu a:visited {
+    color: #555555;
+    margin: 50px;
+    font-size: 200%;
+    text-decoration: none;
+}
+hr {
+    border: 0;
+    width: 70%;
+    height: 2px;
+    background: #c0c0c0;
+}
+table {
+    text-align: left;
+}
+ul {
+    text-align: left;
+}

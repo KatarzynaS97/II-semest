@@ -1,0 +1,4 @@
+1. SELECT miesiĄc, rok FROM zadania WHERE dataZadania="2020-08-01"
+2. SELECT dataZadania, wpis FROM zadania where miesiąc LIKE "lipiec";
+3. select distiNCT miesiąc from zadania where miesiąc LIKE "l%";
+4. update zadania SET wpis ="Wycieczka:jezioro" where dataZadania="20-08-13";

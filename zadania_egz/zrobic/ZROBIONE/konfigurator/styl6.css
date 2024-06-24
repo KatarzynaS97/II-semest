@@ -1,0 +1,55 @@
+*{
+	font-family:Georgia;
+}
+#lewy
+{
+	background-color: Maroon;
+	color:white;
+	height:600px;
+	width:30%;
+	float:left;
+	
+}
+#prawy
+{
+	background-color: Maroon;
+	color:white;
+	height:600px;
+	width:70%;
+	overflow: scroll;
+	float:left;
+}
+footer
+{
+	background-color:DimGray;
+	color:white;
+	clear:both;
+}
+img,
+ul
+{
+	float:left;
+	
+}
+p
+{
+	padding:10px;
+	clear:both;
+}
+img{
+	padding:10px;
+	border:solid 1px white;
+}
+#indigo
+{
+	background-color: indigo;
+}
+#SteelBlue
+{
+	background-color: SteelBlue;
+}
+
+#Olive
+{
+	background-color:Olive;
+}

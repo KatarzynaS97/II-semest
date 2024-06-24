@@ -1,0 +1,72 @@
+head
+{
+	font-family:Helvetica;
+	
+}
+table
+{
+	border:  1px solid #4FB3BF;
+	width:80%;
+	margin:auto;
+	border-collapse:collapse ;
+}
+td	
+{
+	border:  1px solid #4FB3BF;
+	padding:4px;
+}
+td:hover
+{
+	background-color:#4FB3BF;
+}
+th 
+{
+border:  1px solid #4FB3BF;
+padding:4px;	
+
+}
+img 
+{
+	box-shadow:10px 10px 7px DimGray;
+	margin:20px;
+}
+.ban_stopka
+{
+	background-color: #00838F;
+	color:white;
+	padding:5px;
+	font-size:130%;
+	text-align:center;
+	clear:both;
+	
+	
+	
+}
+#pierwszy_blok
+{
+	background-color:#EFEFEF;
+	width:55%;
+	height:150px;
+	float:left
+	
+	
+}
+#drugi_blok
+{
+	background-color:#EFEFEF;
+	width:55%;
+	height:300px;
+	float:left
+	
+}
+
+#fotka
+{
+	background-color:#4FB3BF;
+	height:450px;
+	width:45%;
+	text-align:center;	
+	float:right;
+	
+}
+	

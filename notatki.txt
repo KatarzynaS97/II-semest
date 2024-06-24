@@ -1,0 +1,35 @@
+flexbox
+tablica statyczna 
+this
+remove add toggle
+WYSIWYG
+FOReACH
+
+
+
+manipulacja dom javascript
+ASYNCHRONICZNOŚĆ - od góry kodu w dół bez przerwy a kiedy asynchroniczne działanie rozbic jeden program na wiele wątków.
+
+php łaćzy sie z wieloma serwerami 
+sposoby połaczenia php z serwerem
+Pliki cookies (znane oficjalnie jako HTTP cookies) są małymi dokumentami (najczęściej tekstowymi), które są generowane przez serwer internetowy i wysyłane do przeglądarki internetowej.
+wykorzusteja jako pamiec dodadkową
+
+co to jest serwer 
+przechowuje dane 
+try catch finaly 
+them 
+
+visual studio 
+combobox 
+
+pobierz wartosc z elementu idziemy po name nie po id 
+asynhroniczność 
+JSON jezyk zapisu danych 
+funkcja strzałkowa 
+
+rodziaje bazy danych 
+tablica asocjacynja php 
+
+
+charsety

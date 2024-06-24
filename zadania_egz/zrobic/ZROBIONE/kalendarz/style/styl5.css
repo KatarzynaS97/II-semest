@@ -1,0 +1,93 @@
+.zdjecie {
+	margin-top: -20px;
+}
+
+#lewy {
+	background-color: #FF6600;
+	height: 170px;
+	width: 30%;
+	float: left;
+	color: black;
+}
+
+#prawy {
+	background-color: #FF6600;
+	color: white;
+	height: 170px;
+	width: 70%;
+	float: left;
+	color: black;
+}
+
+.notatka {
+	text-align: center;
+	font-size: 15px;
+}
+
+.dane {
+	background-color: #E6E6E6;
+	width: 180px;
+	height: 120px;
+	margin: 2px;
+	border: 1px solid;
+	float: left;
+	border: none;
+	border-radius: 10px;
+}
+
+footer {
+	background-color: #FF6600;
+	color: white;
+	padding: 10px;
+	clear: both;
+	color: black;
+	font-weight: bolder;
+
+}
+
+h5 {
+	text-align: center;
+
+}
+
+
+.przyciski {
+	margin-left: 80px;
+	margin-top: 10px;
+	border-radius: 5px;
+	font-size: 18px;
+	font-weight: bolder;
+}
+
+h1 {
+	font-size: 55px;
+	margin-left: -125px;
+
+}
+
+.miesiac {
+	margin-top: -95px;
+	margin-left: 155px;
+	letter-spacing: 1px;
+
+}
+
+.rok {
+	margin-top: -25px;
+	margin-left: 155px;
+	letter-spacing: 1px;
+
+}
+
+#pole,
+#data {
+	border-radius: 5px;
+	font-size: 18px;
+	
+
+}
+
+.labele {
+	font-weight: bolder;
+
+}

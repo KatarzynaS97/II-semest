@@ -1,0 +1,7 @@
+1.SELECT nazwa, ilosc, nazwaProd FROM materialy JOIN producenci ON producenci.id = materialy.Producenci_id 
+WHERE ilosc>9;
+
+2.SELECT nazwa, nazwaProd , nazwaJedn FROM materialy JOIN producenci ON producenci.id= materialy.Producenci_id JOIN jednostki on jednostki.id= materialy.Jednostki_id;
+3.CREATE USER zaopatrzenie@localhost identified by 'Z@op@trzenie';
+4.GRANT SELECT ,UPDATE, INSERT, DELETE ON firma.* to zaopatrzenie@localhost;
+

@@ -1,0 +1,4 @@
+1.SELECT nazwa, potoczna FROM grzyby WHERE jadalny=1;
+2.SELECT grzyby.nazwa, potoczna , rodzina.nazwa from grzyby JOIN rodzina ON rodzina.id= grzyby.rodzina_id JOIN potrawy ON potrawy.id= grzyby.potrawy_id WHERE potrawy.nazwa = "sos";
+3.SELECT nazwa_pliku , potoczna FROM grzyby;
+4.ALTER TABLE rodzina ADD opis TEXT;

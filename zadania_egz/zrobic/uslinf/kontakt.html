@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<title>Usługi informatyczne</title>
+<link rel="stylesheet" href="styl.css">
+
+<link rel="shortcut icon" type="image/ico" href="logo.png"> 
+</head>
+<body>
+<div id="container">
+<header id="logo">
+<img src="logo.png" alt="logo firmy" id="it">
+	<nav id="menu"> 
+	<a href="index.html">O nas</a>
+	<a href="uslugi.html">Usługi</a>
+	<a href="kontakt.html">Kontakt</a>
+	</nav>
+
+
+
+</header>
+<nav id="baner">
+<img src="grafika.png" id="grafika">
+
+</nav>
+<main id="glowny">
+<hr>
+	<h2>Kontakt</h2>
+	<table>
+		<tr>
+			<td>Imię:</td><td><input type="text" id="imie"</td>
+		</tr>
+		<tr>
+			<td>Nazwisko:</td><td><input type="text" id="nazwisko"</td>
+		</tr>
+		<tr>
+			<td>E-mail:</td><td><input type="text" id="email"</td>
+		</tr>
+		<tr>
+			<td>Usługa:</td><td><textarea id="usluga"></textarea></td>
+		</tr>
+		<tr>
+			<td><input type="radio" id="regulamin"></td><td>Zapoznałam/em się z regulaminem</td>
+		</tr>
+		<tr>
+			<td><button type="reset">Resetuj</button></td><td><input type="button" id="prześlij" value="Prześlij" onClick="przeslij()"</td>
+		</tr>
+	</table>
+	<div id="wyswietl" ></div>
+<hr>
+</main>
+<footer id="stopka">
+	<p>Autor strony:</p>
+</footer>
+</div>
+<script>
+ function przeslij()
+ {
+	var imie = document.getElementById("imie").value;
+	var nazwisko = document.getElementById("nazwisko").value;
+	var usluga = document.getElementById("usluga").value;
+	var regulamin = document.getElementById("regulamin").checked;
+	var email = document.getElementById("email").value;
+	var wyswietl= document.getElementById("wyswietl");
+	
+	
+	
+	if(regulamin){
+		wyswietl.innerHTML= "<p>"+imie.toUpperCase() + " "+ nazwisko.toUpperCase() +"</p>"+ "<br>Treść Twojej sprawy: " + usluga + "<br>Na podany e-mail zostanie wysłana oferta.";
+	}else
+	{
+		wyswietl.innerHTML= "<p style='color:red;'>Musisz zapoznać się z regulaminem</p>";
+	}
+ }
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+*{
+	font-family:Helvetica;
+}
+header,
+footer
+{
+	background-color:rgb(70 130 180);
+	color:white;
+	height:30px;
+	text-align:center;
+}
+main
+{
+	background-color:rgb(176 130 180);
+	color:white;
+	padding:50px;
+	text-align:center;
+}
+#lewy
+{
+	background-color:rgb(70 130 180);
+	color:white;
+	height:300px;
+	width:80%;
+	
+}
+#prawy
+{
+	background-color:rgb(70 130 180);
+	color:white;
+	height:300px;
+	width:20%;
+}
+#zdj_glowne
+{
+	padding:3px;
+	border: dashed blue 1px;
+	border-radius:10px;
+	
+}
+
+.zdj_lewy{
+	height:40%;
+	
+}
+.zdj_lewy:hover
+{
+	border:solid 1px white;
+}

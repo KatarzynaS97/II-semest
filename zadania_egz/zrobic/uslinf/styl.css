@@ -1,0 +1,94 @@
+*
+{
+	background-color:#EEEEEE;
+	
+}
+#container
+{
+	width:1000 px;
+	margin:auto;
+	text-align:center
+}
+ul 
+{
+	text-align:left;
+}
+#logo,
+#menu,
+#stopka
+{
+	background-color:#C0C0C0;
+	height:100px;
+	padding-top:10px;
+	padding-bottom:10px;
+	
+}
+#it
+{
+	float:left;
+	margin-left:50px;
+}
+#logo{
+	height:400px;
+	
+}
+#menu{
+	height:600px;
+}
+
+#baner
+{
+	background-color:#DDDDDD;
+	height:200px;
+	position:relative;bottom:300px;
+	
+}
+main
+{
+	margin:50px;
+	position:relative;bottom:300px;
+}
+
+footer
+{
+	text-align:right;
+	position:relative;bottom:300px;
+}
+#grafika
+{
+	margin-left:-1000px;
+}
+a
+{
+	color:#555555;
+	margin:50px;
+	font-size:200%;
+	text-decoration:none;
+}
+
+hr
+{
+	background-color:#C0C0C0;
+	width:70%;
+	font-weight:2px;
+}
+table
+{
+	text-align:left;
+}
+#wyswietl
+{
+	position:relative;top:50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+

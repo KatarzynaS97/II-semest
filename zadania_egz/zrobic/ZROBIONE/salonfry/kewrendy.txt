@@ -1,0 +1,2 @@
+3CREATE USER 'fryzjer'@'localhost' identified by "Fryz12";
+4. GRANT ALTER ON egzamin2.kadra TO 'fryzjer'@'localhost';

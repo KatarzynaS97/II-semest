@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Usługi fryzjerskie</title>
+<link rel="stylesheet" href="styl.css">
+
+</head>
+<body>
+
+<section id="lewy1">
+	<h2><a href="index.html">SALON FRYZJERSKI</a>
+	</h2>
+	<img src="obraz2.jpg" alt="Czesanie">
+</section>
+<section id="prawy1">
+<h2>MENU</h2>
+</section>
+
+<section id="prawy2">
+
+	<ol>
+		<li><a href="fryzura.html">Strzyżenie</a>
+			<ul>
+				<li>krótkie</li>
+				<li>średnie</li>
+				<li>półdługie</li>
+				<li>długie</li>
+			</ul>
+		</li>
+		<li>Czesanie</li>
+		<li>Koloryzacja</li>
+	</ol>
+</section>
+
+
+
+<section id="lewy2">
+<h3>Dziś promocja na strzyżenie włosów</h3>
+<input type="radio"  name="wlosy"id="krotkie" value=""  ><label for="krotkie">Krótkie</label><br />
+<input type="radio" name="wlosy" id="srednie" value="" ><label for="srednie">Średnie</label><br />
+<input type="radio" name="wlosy" id="poldlugie" value="" ><label for="poldlugie">Półdługie</label><br />
+<input type="radio" name="wlosy" id="dlugie" value="" ><label for="dlugie">Długie</label><br />
+<button id="przycisk" onClick="oblicz()">Odkryj promocje</button>
+<div id="wynik"></div>
+</section>
+
+<section id="prawy3">
+	<img src="obraz1.jpg" alt="fryzjer">
+</section>
+
+
+
+
+<footer id="stopka">
+<p>Autor :Katarzyna Śmierzchalska</p>
+</footer>
+
+<script>
+
+function oblicz()
+{
+	let krotkie = document.getElementById("krotkie").checked;
+	let srednie = document.getElementById("srednie").checked;
+	let poldlugie = document.getElementById("poldlugie").checked;
+	let dlugie = document.getElementById("dlugie").checked;
+	let wynik = document.getElementById("wynik");
+	let cena="";
+	
+	if(krotkie)
+	{
+		cena = 25;
+	}
+	else if(srednie)
+	{
+		cena = 30;
+	}
+	else if(poldlugie)
+	{
+		cena= 40;
+	}
+	else if(dlugie)
+	{
+		cena = 50;
+	}
+	
+	wynik.innerHTML="Cena strzyżenia: "+ cena;
+	
+	
+	
+}
+
+
+
+
+
+
+</script>
+</body>
+</html>

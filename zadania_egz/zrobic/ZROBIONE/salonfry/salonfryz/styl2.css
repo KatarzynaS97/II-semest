@@ -1,0 +1,57 @@
+body {
+  font-family: Helvetica;
+  margin: 0;
+  padding: 0;
+}
+.l1 {
+  float: left;
+  height: 400px;
+  width: 70%;
+  background-color: Snow;
+  text-align: center;
+}
+.l2 {
+  float: left;
+  height: 400px;
+  width: 70%;
+  background-color: Snow;
+  font-size: 150%;
+}
+.p1 {
+  float: left;
+  height: 150px;
+  width: 30%;
+  background-color: SteelBlue;
+  color: white;
+  text-align: center;
+}
+.p2 {
+  float: left;
+  height: 350px;
+  width: 30%;
+  background-color: SteelBlue;
+  color: white;
+}
+.p3 {
+  float: left;
+  height: 300px;
+  width: 30%;
+  background-color: Snow;
+  text-align: center;
+}
+footer {
+  background-color: SteelBlue;
+  color: white;
+  width: 100%;
+  float: left;
+}
+h2 {
+  font-size: 250%;
+}
+img {
+  padding: 4px;
+}
+img:hover {
+  padding: 3px;
+  border: solid 1px SteelBlue;
+}

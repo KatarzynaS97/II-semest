@@ -1,0 +1,36 @@
+body
+{
+	background-color:#D0D3D4 ;
+	display:flex;
+	justify-content:center;
+	align-items: center;
+}
+#formularz
+{
+	width:450px;
+	height:100%;
+	background-color:white;
+	display:flex;
+	justify-content:center;
+	align-items:flex-start;
+	font-size:25px;
+}
+#przycisk
+{
+	
+	font-size:25px;
+	border:2px solid;
+	border-radius: 5px;
+	margin-top:5px;
+	
+}
+.data
+{
+	display:flex;
+	justify-content:center;
+	align-items: center;
+	font-size:25px;
+	border:2px solid;
+	border-radius: 5px;
+	margin:5px;
+}

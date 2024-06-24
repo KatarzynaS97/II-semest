@@ -1,0 +1,60 @@
+*
+{
+	font-family: Verdana;
+	margin:0;
+	padding:0;
+}
+#miniatura
+{
+	background-color: sienna;
+	height: 100px ; 
+	width: 20%;
+	float:left;
+}
+#tytul
+{
+	background-color: sienna;
+	color:orange;
+	height:100px;
+	width:80%;
+	float:left;
+}
+#lewy
+{
+	background-color:BurlyWood;
+	width:70%;
+	height:700px;
+	float:left;
+}
+#prawy
+{
+	background-color:BurlyWood;
+	width:30%;
+	height:700px;
+	float:left;
+}
+footer
+{
+	background-color:Sienna;
+	color:orange;
+	text-align:center;
+}
+img
+{
+	margin:7px;
+	padding:5px;
+	border: solid  RosyBrown;
+	
+	
+
+}
+
+img:hover
+{
+	border: solid Maroon;
+	
+}
+p
+{
+	padding:10px;
+}

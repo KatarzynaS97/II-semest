@@ -1,0 +1,13 @@
+1.INSERT INTO zawody_wedkarskie(id, Karty_wedkarskie_id,Lowisko_id,data_zawodow, sedzia) VALUES(NOT NULL,2,4,"2021-09-28","Andrzej Nowak" );
+2.SELECT pole, data_zawodow FROM zawody_wedkarskie WHERE sedzia="Krzysztof Dobrowolski";
+3.SELECT imie, nazwisko, punkty From karty_wedkarskie, zawody_wedkarskie WHERE karty_wedkarskie.id=zawody_wedkarskie.Karty_wedkarskie_id And zawody_wedkarskie.id = 4;
+
+3.SELECT imie, nazwisko, punkty From karty_wedkarskie 
+połacz zawodywedkarskkie z 
+JOIN zawody_wedkarskie ON  karty_wedkarskie.id=zawody_wedkarskie.Karty_wedkarskie_id
+WHERE zawody_wedkarskie.id = 4;
+
+
+4.UPDATE karty_wedkarskie
+SET punkty=punkty+2
+WHERE id=1;

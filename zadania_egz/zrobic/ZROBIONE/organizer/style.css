@@ -1,0 +1,61 @@
+*{
+	font-family:Georgia;
+	margin:0;
+	padding:0;
+}
+#pierwszy, 
+#drugi
+{
+	background-color:#3CB371;
+	height:100px;
+	width:40%;
+	color:white;
+	float:left;
+}
+#trzeci
+{
+	background-color:#3CB371;
+	height:100px;
+	width:20%;
+	float:left;
+	
+}
+
+#dane
+{
+	background-color:#FFDAB9;
+	width:170px;
+	height:90px;
+	float:left;
+	padding:10px;
+	border:1px solid green;
+	margin:5px;
+	
+	
+}
+
+footer
+{
+	background-color:#3CB371;
+	color:white;
+	clear:both;
+	
+}
+
+main{
+
+}
+h6
+
+{
+	text-align:right;
+	
+}
+p
+{
+	text-align:left;
+}
+form
+{
+	padding:30px;
+}

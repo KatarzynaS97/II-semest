@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylsheet" href="styl7.css">
+<title>Galeria</title>
+
+</head>
+<body>
+<header>
+	<h2>Galeria miejsc ciekawych</h2>
+</header>
+<main>
+	<img src="lanzarotte.jpg" alt="galeria" id="zdj_glowne" >
+</main>
+<aside id="lewy">
+	<h3>Przeglądaj zdjęcia</h3>
+	<img src="lanzarotte.jpg" alt="lanzarotte" class="zdj_lewy" onClick="zmien('lanzarotte.jpg')">
+	<img src="pekin.jpg" alt="pekin"  class="zdj_lewy" onClick="zmien('pekin.jpg')">
+	<img src="serengeti.jpg" alt="serengeti"  class="zdj_lewy" onClick="zmien('serengeti.jpg')">
+	<img src="wenecja.jpg" alt="wenecja"  class="zdj_lewy" onClick="zmien('wenecja.jpg')">
+	<img src="tajlandia.jpg" alt="tajlandia"  class="zdj_lewy" onClick="zmien('tajlandia.jpg')">
+</aside>
+<aside id="prawy">
+	<h3>Obrazy w naszej galerii </h3>
+	<table>
+		<tr>
+			<td>Europa</td>
+			<td>Azja</td>
+			<td>Afryka</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>2</td>
+			<td>1</td>
+		</tr>
+	</table>
+	<p>Polub nas</p>
+	<img src="icon-off.png" id="polub" onclick="zamienPolub()">
+	<a href="https://pixabay.com" target="_blank">Odkryj więcej zdjęć</a>
+</aside>
+<footer>
+
+<p>Autor: Katarzyna Śmierzchalska</p>
+
+</footer>
+<script src="main.js"></script>
+</body>
+</html>

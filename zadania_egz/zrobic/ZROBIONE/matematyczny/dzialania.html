@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+   
+    
+    <title>Działania matematyczne</title>
+    <link rel="stylesheet" href="styl.css">
+    
+</head>
+<body>
+	<header id="baner">
+		<section id="pierwszy">
+			<img src="logo.jpg" alt="matematyka">
+		</section>
+		<section id="drugi">
+			<h1>Pomocnik Matematyczny</h1>
+		</section>
+		<section id="trzeci">
+			<a href="dzialania.html"><h4>Działania</h4></a>
+		</section>
+		<section id="czwarty">
+			<a href="mnozenie.html"><h4>Tabliczka mnożenia</h4></a></section>
+	</header>
+	<aside id="prawy">
+		<ul>
+			<li>dodawania</li>
+			<li>odejmowanie</li>
+			<li>mnożenie</li>
+			<li>dzielenie</li>
+			<li>potęgowanie</li>
+		</ul>
+	</aside>
+	<aside id="lewy">
+		<h3>Proste działania</h3>
+		liczba A: <input type="number" id="liczbaA"><br>
+		liczba B: <input type="number" id="liczbaB"><br>
+		<button id="dodawanie" onClick="oblicz('+')">+</button>
+		<button id="odejmowanie" onClick="oblicz('-')">-</button>
+		<button id="mnozenie" onClick="oblicz('*')">*</button>
+		<button id="dzielenie" onClick="oblicz('/')">/</button>
+		<button id="potegowanie" onClick="oblicz('^')">A^B</button>
+		<div id="wynik"></div>
+	</aside>
+	<footer id="stopka">
+		<p> Autor: Katarzyna Śmierzchalska</p>
+	</footer>
+	<script>
+	function oblicz(dzialanie)
+	{
+		let liczbaA = Number(document.getElementById("liczbaA").value);
+		let liczbaB =Number( document.getElementById("liczbaB").value);
+		let wynik = document.getElementById("wynik");
+		
+		
+		switch(dzialanie)
+		{
+			case "+":wynik.innerHTML = liczbaA+liczbaB;
+			break;
+			case "-":wynik.innerHTML = liczbaA-liczbaB;
+			break;
+			case "*":wynik.innerHTML = liczbaA*liczbaB;
+			break;
+			case "/":wynik.innerHTML = liczbaA/liczbaB;
+			break;
+			case "^":wynik.innerHTML =liczbaA ** liczbaB;
+			break;
+			default:wynik.innerHTML="zle działanie";
+		}
+		return;
+	}
+	
+	
+	
+	</script>
+</body>
+</html>

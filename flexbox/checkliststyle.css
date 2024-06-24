@@ -1,0 +1,30 @@
+.off
+{
+    background-color: red;
+    height: 15px;
+    width: 15px;
+
+}
+
+.on 
+{
+background-color: green; /*!important - wymusza */
+}
+
+#kwadraty
+{
+    display: flex;
+    width: 100vw;
+    padding: 0;
+    align-items: stretch;
+    margin-top: 20px;
+    justify-content: space-evenly;
+
+}
+.kwadrat
+{
+    width: 30vw; 
+    height: 30vw;
+    background-color: blue;
+}
+

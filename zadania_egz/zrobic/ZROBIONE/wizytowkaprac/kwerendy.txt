@@ -1,0 +1,4 @@
+1. SELECT pole, id, imie, nazwisko , adres , miasto FROM pracownicy WHERE id=1;
+2. SELECT imie, nazwisko FROM pracownicy where czyRODO=0;
+3. SELECT  id, nazwisko  from pracownicy where czyBADANIA=0 and dataUr between 1970 and 1979;
+4. ALTER TABLE pracownicy ADD COLUMN umiejetnosci text;

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head lang="pl">
+<meta charset="utf-8">
+<title>Galeria</title>
+<link rel="stylesheet" href="styl.css">
+</head>
+<body>
+<header>
+	<h1>Galeria obrazów</h1>
+</header>
+<main>
+	<section id="lewy">
+		<img src="zdjecie.jpg" alt="zdjęcie dnia" class="lewe_zdj">
+		<h3>Zdjęcia opublikowali</h3>
+		<table>
+			<tr>
+				<td>Anna porada </td><td>10zdjęć</td>
+			</tr>
+			<tr>
+				<td>Krzysztof Wasilewski </td><td>12zdjęć</td>
+			</tr>
+			<tr>
+					<td>Monika Kowalska </td><td>4zdjęć</td>
+			</tr>
+		</table>
+	</section>
+	<section id="prawy">
+		<input type="button" value = "pre" onclick="zdjecie()" id="pre">
+		<img src="1.jpg" id="glowne" alt="galeria" >
+		<input type="button" value="next" onclick="next()" id="next">
+		<hr>
+		<img src="1.jpg" alt="miniaturka" onclick="zmiana('1.jpg',1)">
+		<img src="2.jpg" alt="miniaturka" onclick="zmiana('2.jpg',2)">
+		<img src="3.jpg" alt="miniaturka" onclick="zmiana('3.jpg',3)">
+		<img src="4.jpg" alt="miniaturka" onclick="zmiana('4.jpg',4)">
+		<img src="5.jpg" alt="miniaturka" onclick="zmiana('5.jpg',5)">
+	</section>
+</main>
+
+<footer>
+<a href="https://pixaby.com" target="_blank">wiecej obrazów</a>
+<p>Galerię wykonała: Katarzyna Śmierzchalska</p>
+</footer>
+<script src="main.js"></script>
+</body>
+</html>

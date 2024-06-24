@@ -1,0 +1,4 @@
+INSERT into Karty_wedkarskie (imie, nazwisko, adres, data_zezwolenia, punkty) values ('Grzegorz', 'Niemczyk', 'Gdynia, Batotego 14/5', '2018-02-23', 0);
+SELECT imie, nazwisko from Karty_wedkarskie WHERE punkty > 20;
+SELECT lowisko.akwen from lowisko left join zawody_wedkarskie on lowisko.id = zawody_wedkarskie.Lowisko_id where zawody_wedkarskie.sedzia = 'Krzysztof Dobrowolski';
+CREATE USER 'anna' IDENTIFIED BY 'anna123';

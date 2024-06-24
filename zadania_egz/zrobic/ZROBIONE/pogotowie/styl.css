@@ -1,0 +1,78 @@
+*{
+	font-family:georgia;
+	
+}
+body{
+	margin:0;
+	padding:0;
+	
+}
+header,
+footer
+{
+	background-color:Sienna;
+	color:white;
+	height:150px;
+	
+}
+img
+{
+	float:left;
+}
+#pierwszy_baner,
+#pierwsza_stopka
+{
+	width:40%;
+	
+}
+#drugi_baner,
+#druga_stopka
+{
+	width:50%;
+	font-size:150%;
+	text-align:center;
+	float:left;
+	
+	
+}
+
+#trzeci_baner,
+#trzecia_stopka
+{
+	width:10%;
+	text-align:center;
+	float:right;
+}
+
+#trzeci_baner
+{
+	float:right;
+}
+
+main
+{
+	background-color:Tan;
+	padding:100px;
+}
+a{
+	border:dashed 1px Sienna;
+	background-color:Tan;
+	color:Sienna;
+	padding:40px;
+	
+	float:right;
+}
+
+li
+{
+	list-style-type:circle;
+}
+
+footer{
+	display:flex;
+}
+
+
+
+
+

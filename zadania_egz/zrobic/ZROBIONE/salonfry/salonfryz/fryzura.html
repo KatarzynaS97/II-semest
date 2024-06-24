@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pl" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Usługi fryzjerskie</title>
+    <link rel="stylesheet" href="styl2.css">
+  </head>
+  <body>
+    <section class="l1">
+      <a href="index.html"><h2>SALON FRYZJERSKI</h2></a>
+      <img src="obraz2.jpg" alt="czesanie">
+    </section>
+    <section class="p1">
+      <h2>MENU</h2>
+    </section>
+    <section class="p2">
+      <ol>
+        <li><a href="fryzura.html">Strzyżenie </a><br>
+          <ul>
+            <li>krótkie</li>
+            <li>średnie</li>
+            <li>półdługie</li>
+            <li>długie</li>
+          </ul>
+        </li>
+        <li>Czesanie</li>
+        <li>Koloryzacja</li>
+      </ol>
+    </section>
+    <section class="l2">
+      <h3>Dziś promocja na strzyżenie włosów</h3>
+      <input type="radio" name="fryzura" value="" id="krutkie">
+      <label for="krutkie">Krótkie</label><br>
+      <input type="radio" name="fryzura" value="" id="srednie">
+      <label for="srednie">Średnie</label><br>
+      <input type="radio" name="fryzura" value="" id="puldlugie">
+      <label for="puldlugie">Półdługie</label><br>
+      <input type="radio" name="fryzura" value="" id="dlugie">
+      <label for="dlugie">Długie</label><br>
+      <button type="button" name="button" onclick="myfunction()">Odkryj promocję</button>
+      <div id="output"></div>
+   </section>
+    <section class="p3">
+      <img src="obraz1.jpg" alt="Fryzjer">
+    </section>
+    <footer>
+      <a>Autor: 00000000000</a>
+    </footer>
+    <script type="text/javascript">
+      function myfunction() {
+        var cena = 0;
+        if (document.getElementById("krutkie").checked) {
+          cena = 25;
+        }
+        if (document.getElementById("srednie").checked) {
+          cena = 30;
+        }
+        if (document.getElementById("puldlugie").checked) {
+          cena = 40;
+        }
+        if (document.getElementById("dlugie").checked) {
+          cena = 50;
+        }
+        document.getElementById('output').innerHTML = "Cena strzyżenia: " + cena;
+      }
+    </script>
+  </body>
+</html>

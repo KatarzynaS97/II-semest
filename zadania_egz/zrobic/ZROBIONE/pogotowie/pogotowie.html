@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8">
+    <title>Pogotowie Ratunkowe</title>
+    <link rel="stylesheet" href="styl.css">
+	
+  </head>
+  <body>
+	<header>
+		<section id="pierwszy_baner">
+			<img src="obraz.jpg" alt="pogotowie">
+ 		</section>
+		<section id="drugi_baner">
+			<h1>Pogotowie <br />Ratunkowe</h1>
+		</section>
+			
+		<section id="trzeci_baner">
+			<p>Kontakt:<br/> 022 222 11 333</p>
+		</section>
+	</header>
+	<main>
+		<h2>Dodaj nowe zgłoszenie</h2>
+		<form action="zgloszenie.php" method="post">
+		<label>Numer zespołu ratowniczego:</label><br/>
+		<input type="number" name="numer_zespolu"><br/>
+		
+		<label>Numer dyspozytora:</label><br/>
+		<input type="number" name="numer_dyspo"><br/>
+		
+		<label>Adres:</label><br/>
+		<input type="text" name="adres" size="100px"><br/>
+		
+		<button type="reset">WYCZYŚĆ</button>
+		<button>ZGŁOŚ</button>
+		
+	</main>
+	<footer>
+		<section id="pierwsza_stopka">
+			<h4>Numery alarmowe</h4>
+				<ul>
+					<li>999</li>
+					<li>112</li>
+				</ul>
+		</section>
+		<section id="druga_stopka">
+			<a href="kwerendy.txt">Pobierz kwerendy</a>
+		
+		</section>
+		
+		<section id="trzecia_stopka">
+		<p>Autor<br/> katarzyna śmierzchalska</p>
+		
+		</section>
+	</footer>
+  </body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Usługi kosmetyczne</title>
+<link rel="stylesheet" href="style1.css">
+
+</head>
+<body>
+<section id="lewy1">
+	<h2>W ofercie</h2>
+		<ul>
+			<li><a href="twarz.html">Zabiegi na twarz</a>
+				<ol>
+					<li>Piling</li>
+					<li>Maska</li>
+					<li>Regulacja brwi</li>
+				</ol>
+			</li>
+			<li>Masaż</li>
+			<li>Diety oczyszczające</li>
+		</ul>
+		<a href="index.html">Do strony głównej</a>
+</section>
+
+<section id="prawy1">
+	<h1>Salon kosmetyczny</h1>
+</section>
+
+<section id="prawy2">
+	<h2>Sprawdź cenę swojej wizyty</h2>
+	<input type="checkbox" id="piling" ><label for="piling">Piling</label><br>
+	
+	<input type="checkbox" id="maska" ><label for="maska">Maska</label><br>
+	
+	<input type="checkbox" id="twarzy" ><label for="twarzy">Masaż twarzy</label><br>
+	
+	<input type="checkbox" id="brwi" ><label for="brwi">Regulacja brwi</label><br>
+	<button id="przycisk" onClick="sprawdz()">Sprawdź cenę</button><br>
+	<div id="wynik"></div>
+</section>
+<section id="lewy2">
+	<img src="obraz1.jpg" alt="kosmetyczka">
+</section>
+<footer id="stopka">
+<p>Autor: Katarzyna Śmierzchalska</p>
+</footer>
+
+<script>
+function sprawdz()
+{
+	let wynik = document.getElementById("wynik");
+	let piling=document.getElementById("piling").checked;
+	let maska=document.getElementById("maska").checked;
+	let twarzy=document.getElementById("twarzy").checked;
+	let brwi=document.getElementById("brwi").checked;
+	let cena="";
+	if(piling) cena += 45;
+	if(maska) cena += 30;
+	if(twarzy) cena += 20;
+	if(brwi) cena += 5;
+	wynik.innerHTML = "Cena zabiegów: " + cena ;
+	
+	/*if(piling){
+		cena=45;
+	}
+	else if(maska){
+		cena1=30;
+	}
+	else if(twarzy){
+		cena=20;
+		
+	}
+	else if (brwi){
+		cena=5;
+	}else {
+	cena=0;
+	}
+	 
+	 wynik.innerHTML= "Cena zabiegów:"+cena;*/
+}
+
+
+
+</script>
+</body>
+</html>

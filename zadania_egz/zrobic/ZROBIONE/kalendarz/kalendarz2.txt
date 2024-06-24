@@ -1,0 +1,97 @@
+ html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Planer</title>
+    <link rel="stylesheet" href="styl5.css">
+	<link rel="shortcut icon" href="kalendarzico.jpg">
+</head>
+
+<body>
+    <header>
+       <section id="lewy">
+		<img src="kalendarz.png" alt="mój kalendarz" class="zdjecie">
+		
+       </section>   
+	   
+	   <section id="prawy">
+		<h1>Planer</h1>
+		<label>Miesiąc</label>
+		<input type="text" id="miesiac" name="miesiac">
+		<label>Rok</label>
+		<input type="text" id="rok" name="rok">
+		<button id="szukaj" name="pokaz">POKAŻ</button>
+
+			<?php
+			$polaczenie= mysqli_connect("localhost","root","","egzamin5");
+			$zapyatnie = "SELECT miesiąc, rok FROM zadania WHERE dataZadania='2024-03-01; '";
+			$result=mysqli_query($polaczenie, $zapyatnie);
+			
+			while($row=mysqli_fetch_row($result))
+			{
+				echo "<h3>miesiąc : $row[0] rok : $row[1] </h3>";
+			}
+			
+			
+			?>
+			<section class='wpis'>
+			<?php
+			
+			if(isset($_POST['wpis']) && (isset($_POST['data'])))
+			{
+				
+				$wpis = $_POST['wpis'];
+				$data = $_POST['data'];
+				$zapytanie3 = "update zadania SET wpis = ' $wpis' where dataZadania='$data';";
+				$result3 = mysqli_query($polaczenie, $zapytanie3);
+				
+			}
+			
+			
+			?>
+			</section>
+       </section>
+    </header>
+    <main> 
+    <?php
+	if(isset($_POST['miesiac']) && isset($_POST['rok']) && isset($_POST['pokaz']))
+			{
+				$pokaz=$_POST['pokaz'];
+				$miesiac=$_POST['miesiac'];
+				$rok=$_POST['rok'];
+			
+			$polaczenie= mysqli_connect("localhost","root","","egzamin5");
+			$zapyatnie = "SELECT' $miesiac','$rok 'FROM zadania;'";
+		//$zapyatnie2 = "SELECT dataZadania, wpis FROM zadania where miesiąc LIKE 'marzec';";
+				$result2 =mysqli_query($polaczenie, $zapyatnie);
+					while($row2 = mysqli_fetch_row($result2))
+					{
+						echo '<section class="dane">
+								<h5>'.$row2[0].'</h5>
+								<p>'.$row2[1].'</p>
+							</section>';
+					}
+					
+					mysqli_close($polaczenie);
+	
+		}	
+	?>
+    </main>
+    <footer>
+		<form action="kalendarz.php" method="post">
+		<label for="data">DATA</label>
+			<input type="data" id="data" name="data">
+			<label for="pole">WPIS:</label>
+			<input type="text" id="pole" name="wpis"><br/>
+			<button id="przycisk" class="przyciski"name="dodaj">DODAJ</button>
+			<button id="przycisk_usun" class="przyciski" name="usun">USUŃ</button>
+
+		</form>
+
+        <p>Stronę przygotowała: KATARZYNA ŚMIERZCHALSKA</p>
+    </footer>
+  
+</body>
+
+</html>

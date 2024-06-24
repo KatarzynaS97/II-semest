@@ -1,0 +1,82 @@
+body {
+  /* czcionka dla całej strony */
+  font-family: Georgia;
+  /* usunięcie marginesu zewnętrznego oraz wewnętrznego dla body */
+  margin: 0;
+  padding: 0;
+}
+/* usunięcie marginu dla tekstu w nagłówku, który powodował odstęp całej strony*/
+h1 {
+  margin: 0;
+}
+.baner {
+  /* zmiana koloru tła */
+  background-color: #005b4f;
+  /* kolor czcionki */
+  color: white;
+  /* wyśrodkowanie teksu do środka */
+  text-align: center;
+  /* wielkośc czcionki */
+  font-size: 75%;
+  /* wysokość */
+  height: 20px;
+}
+.glowny {
+  /* kolor tła */
+  background-color: #e1e2e1;
+  /* wysokość */
+  height: 400px;
+  /* margines wewnętrzny */
+  padding: 20px;
+  /* możliwość scrolowania elementu */
+  overflow: scroll;
+}
+.zdjecie {
+  /* opływanie elementu z lewej storony (potrzebne, aby bloki układały sięobok siebie) */
+  float: left;
+  /* szerokość */
+  width: 20%;
+}
+.osoba {
+  /* szerowokość */
+  width: 100%;
+  /* wyświetlaj jako blok w linii */
+  display: inline-block;
+}
+.linia {
+  /* szerokość */
+  width: 100%;
+}
+/* poniższy styl odnosi siędo dwóch elementów stopki poprzez zapisanie ich tak: .element1, .element2 {styl} */
+.s1,
+.s2 {
+  /* opływanie elementu z lewej storony (potrzebne, aby bloki układały sięobok siebie) */
+  float: left;
+  /* kolor tła */
+  background-color: #005b4f;
+  /* kolor czcionki */
+  color: white;
+  /* wyśrodkowanie tekstu na środek */
+  text-align: center;
+  /* szerokość */
+  width: 50%;
+  /* wysokość */
+  height: 20px;
+}
+img {
+  /* margines wewnętrzny */
+  padding: 20px;
+  /* zakrzywienie obramowania - 100% oznacza pełne koło */
+  border-radius: 100%;
+}
+h2 {
+  /* wyśrodkowanie tekstu na środek */
+  text-align: center;
+  /* kolor tła */
+  background-color: #00897b;
+}
+/* usunięcie niebieskiego koloru z linku w elemencie a */
+a:link {
+  /* kolor czcionki */
+  color: white;
+}

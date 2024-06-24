@@ -1,0 +1,54 @@
+*{
+	font-family: Garamond;
+	background-color:MistyRose;
+	color:rgb(62,39,35);
+	text-align:center;
+	
+}
+main
+{
+	display:flex;
+}
+#lewy
+{
+	width:20%;
+	height:600px;
+	margin:30px;
+	box-shadow: 15px 15px 10px DimGray;
+	overflow: auto;
+	float:left;
+}
+img 
+{
+	width:100%;
+}
+#prawy
+{
+	width:65%;
+	height:600px;
+
+	
+}
+
+img[alt="miniaturka"]
+{
+	width:140px;
+	padding:2px;
+	border-radius:5%;
+	
+}
+img[alt="miniaturka"]:hover
+{
+	border: 1px dotted black;
+}
+#zmiana
+{
+	width:500px;
+	margin:30px;
+	box-shadow:15px 15px 10px DimGray;
+	
+}
+table {
+	border:1px dashed black;
+	width:100%;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usługi informatyczne</title>
+    <link rel="stylesheet" href="styl.css">
+    <link rel="icon" href="logo.png" type="image/x-icon">
+</head>
+<body>
+    <section class="kontener">
+        <section class="logo">
+            <img src="logo.png" alt="logo firmy">
+        </section>
+        <section class="menu">
+            <a href="index.html">O nas</a>
+            <a href="uslugi.html">Usługi</a>
+            <a href="kontakt.html">Kontakt</a>
+        </section>
+        <section class="banner">
+            <img src="animacja.gif">
+        </section>
+        <section class="glowny">
+            <hr>
+            <h2>Kontakt</h2>
+            <table>
+                <form action="">
+                    <tr>
+                        <td>Imię:</td>
+                        <td><input type="text" id="imie"></td>
+                    </tr>
+                    <tr>
+                        <td>Nazwisko:</td>
+                        <td><input type="text" id="nazwisko"></td>
+                    </tr>
+                    <tr>
+                        <td>E-mail:</td>
+                        <td><input type="text" id="email"></td>
+                    </tr>
+                    <tr>
+                        <td>Usługa:</td>
+                        <td><textarea name="" id="usluga" cols="28" rows="6"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="checkbox" id="regulamin" onclick="przeslij()">
+                            <label for="regulamin">Zapoznałam/em się z regulaminem</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <button type="reset">Resetuj</button>
+                            <button type="button" onclick="przeslij()">Prześlij</button>
+                        </td>
+                    </tr>
+                </form>
+            </table>
+            <p id="wynik"></p>
+            <hr>
+        </section>
+        <section class="stopka">
+            <p>Autor strony: <b>0000000000000</b></p>
+        </section>
+    </section>
+    <script>        
+        function przeslij() {
+            var wynik = document.getElementById("wynik");
+            var regulamin = document.getElementById("regulamin").checked;
+            var imie = document.getElementById("imie").value;
+            var nazwisko = document.getElementById("nazwisko").value;
+            var email = document.getElementById("email").value;
+            var usluga = document.getElementById("usluga").value;
+
+            if (regulamin) {
+                wynik.innerHTML = imie.toUpperCase() + " " + nazwisko.toUpperCase() + "<br>Treść Twojej sprawy: " + usluga + "<br> Na podany e-mail zostanie wysłana oferta.";
+            } else {
+                wynik.innerHTML = "<span style='color:red'>Musisz zapoznać się z regulaminem</span>";
+            }
+        }
+    </script>
+</body>
+</html>
